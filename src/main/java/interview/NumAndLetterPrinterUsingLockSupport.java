@@ -22,6 +22,7 @@ public class NumAndLetterPrinterUsingLockSupport {
                 LockSupport.unpark(letterThread);
             }
         }, "numThread");
+        //会乱序，但还是交替打印
         numThread.start();
         letterThread.start();
     }

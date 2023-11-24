@@ -35,9 +35,9 @@ public class PrintAbcUsingLockSupport {
                 LockSupport.unpark(threadC);
             }
         }, "B");
-
-        threadA.start();
-        threadB.start();
+        //不会乱序打印
         threadC.start();
+        threadB.start();
+        threadA.start();
     }
 }
