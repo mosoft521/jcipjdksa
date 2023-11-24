@@ -9,21 +9,20 @@ public class NumAndLetterPrinterUsingLockSupport {
     public static void main(String[] args) {
         letterThread = new Thread(() -> {
             for (int i = 0; i < 26; i++) {
-                System.out.print((char) ('A' + i));
                 LockSupport.unpark(numThread);
                 LockSupport.park();
+                System.out.print((char) ('A' + i));
             }
         }, "letterThread");
 
         numThread = new Thread(() -> {
             for (int i = 1; i <= 26; i++) {
-                System.out.print(i);
                 LockSupport.park();
+                System.out.print(i);
                 LockSupport.unpark(letterThread);
             }
         }, "numThread");
-        //会乱序，但还是交替打印
-        numThread.start();
         letterThread.start();
+        numThread.start();
     }
 }
