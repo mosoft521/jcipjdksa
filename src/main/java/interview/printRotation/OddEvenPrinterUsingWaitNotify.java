@@ -1,4 +1,4 @@
-package interview;
+package interview.printRotation;
 
 public class OddEvenPrinterUsingWaitNotify {
 

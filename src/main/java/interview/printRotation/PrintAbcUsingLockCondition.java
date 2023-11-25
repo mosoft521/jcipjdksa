@@ -1,4 +1,4 @@
-package interview;
+package interview.printRotation;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;

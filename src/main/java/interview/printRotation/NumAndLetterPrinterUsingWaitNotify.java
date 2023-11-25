@@ -1,4 +1,4 @@
-package interview;
+package interview.printRotation;
 
 public class NumAndLetterPrinterUsingWaitNotify {
     private static char c = 'A';
