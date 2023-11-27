@@ -1,7 +1,6 @@
 package com.gmail.mosoft521.jcipjdksa.ch01.project113;
 
 import java.util.concurrent.TimeUnit;
-import java.util.concurrent.locks.LockSupport;
 
 public class MyThread extends Thread {
     private boolean stopped = false;
