@@ -14,4 +14,6 @@ public class Main {
 before method send
 send message:java
 after method send
+JDK9+时，需要add VM options：
+--add-opens java.base/java.lang=ALL-UNNAMED
  */
