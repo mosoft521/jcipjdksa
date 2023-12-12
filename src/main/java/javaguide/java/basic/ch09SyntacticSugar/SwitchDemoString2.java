@@ -9,7 +9,7 @@ public class SwitchDemoString2 {
     public SwitchDemoString2() {
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         String str = "world";
         String s = str;
         byte byte0 = -1;

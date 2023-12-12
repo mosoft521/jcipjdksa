@@ -1,7 +1,7 @@
 package javaguide.java.basic.ch09SyntacticSugar;
 
 public class AssertTest {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         int a = 1;
         int b = 1;
         assert a == b;

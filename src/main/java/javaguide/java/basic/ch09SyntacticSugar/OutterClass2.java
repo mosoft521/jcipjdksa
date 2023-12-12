@@ -32,7 +32,7 @@ public class OutterClass2 {
         this.userName = userName;
     }
 
-    public static void main(String args1[]) {
+    public static void main(String[] args1) {
     }
 
     private String userName;

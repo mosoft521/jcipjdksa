@@ -5,7 +5,7 @@ public class ConditionalCompilation2 {
     public ConditionalCompilation2() {
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         boolean DEBUG = true;
         System.out.println("Hello, DEBUG!");
         boolean ONLINE = false;
