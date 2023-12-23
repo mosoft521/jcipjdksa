@@ -1,0 +1,6 @@
+HTTP/1.0 200 OK
+Server: Ronsoft Dummy Server
+Content-Length: 18
+Content-Type: text/plain
+
+你好，世界！
