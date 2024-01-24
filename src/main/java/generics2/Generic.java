@@ -4,6 +4,9 @@ public class Generic<T> {
     // key 这个成员变量的数据类型为 T, T 的类型由外部传入
     private T key;
 
+    public Generic() {
+    }
+
     // 泛型构造方法形参 key 的类型也为 T，T 的类型由外部传入
     public Generic(T key) {
         this.key = key;
