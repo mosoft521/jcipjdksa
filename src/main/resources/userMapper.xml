@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gmail.mosoft521.mybatis.ser.IUser">
+    <!-- 查询全部用户 -->
+    <select id="queryUsers" resultType="com.gmail.mosoft521.mybatis.pojo.User">
+        select * from user
+    </select>
+    <select id="queryUserById" resultType="com.gmail.mosoft521.mybatis.pojo.User" parameterType="int">
+        Select * From user Where id=#{id}
+    </select>
+</mapper>
